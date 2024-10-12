@@ -12,7 +12,7 @@ app.use(cors({
 }));
 
 // MongoDB connection string (replace <username>, <password>, and <database> with actual values)
-const uri = process.env.MONGO_URI || "mongodb+srv://Gaurav:1234@cluster0.loefxng.mongodb.net/?retryWrites=true&w=majority";
+const uri = process.env.MONGO_URI;
 const client = new MongoClient(uri);
 
 // Root route to check if the server is running
